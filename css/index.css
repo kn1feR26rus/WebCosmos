@@ -1,0 +1,329 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('/assets/fonts/Inter-Regular.otf');
+}
+
+@font-face {
+    font-family: 'Inter-medium';
+    src: url('/assets/fonts/Inter-Medium.otf');
+}
+
+@font-face {
+    font-family: 'Inter-bold';
+    src: url('/assets/fonts/Inter-Bold.otf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Inter';
+}
+
+section {
+    max-width: 100%;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.about, .about__item, .company__box, .stage__item-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.about__items, .company__items, .steps__box, .steps__item, .stage__item, .stage__items {
+    display: flex;
+    flex-direction: row;
+}
+
+.banner {
+    background-image: url('/assets/images/banner.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 900px;
+    position: relative;
+}
+
+.banner__cosmo {
+    background-image: url('/assets/images/cosmo.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    right: 300px;
+    top: 250px;
+    width: 400px;
+    height: 400px;
+    -webkit-animation-name: spin;
+    -moz-animation-name: spin;
+    -ms-animation-name: spin;
+    -o-animation-name: spin;
+    animation-name: spin;
+    -webkit-animation-duration: 24.4s;
+    -moz-animation-duration: 4.4s;
+    -ms-animation-duration: 4.4s;
+    -o-animation-duration: 4.4s;
+    animation-duration: 4.4s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: translate3d(0, -5%, 0);
+    }
+
+    50% {
+        transform: translate3d(0, 5%, 0);
+    }
+
+    100% {
+        transform: translate3d(0, -5%, 0);
+    }
+}
+
+.about__container, .company__container, .stage__container, .steps__container {
+    max-width: 90%;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+.title {
+    font-size: 48px;
+    font-family: 'Inter-medium';
+}
+
+.about__title, .stage__title {
+    color: #0459A0;
+    border-bottom: 5px solid #0459A0;
+    display: inline-block;
+}
+
+.about__items, .company__items, .steps__items, .stage__items {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px 0 0;
+    max-width: 90%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.about__item {
+    max-width: 32%;
+    width: 100%;
+    text-align: center;
+    padding: 50px 0;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+.about__item>span {
+    max-width: 250px;
+}
+
+.item__title {
+    font-size: 45px;
+    color: #0459A0;
+    font-weight: bold;
+    font-family: 'Inter-bold';
+    margin-bottom: 30px;
+}
+
+.item__text {
+    font-size: 24px;
+}
+
+.company {
+    background-image: url('/assets/images/company.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.company__items {
+    padding: 50px 0 116px;
+    justify-content: space-around;
+}
+
+.company__title, .steps__title {
+    color: white;
+    border-bottom: 5px solid white;
+    display: inline-block;
+}
+
+.company__box {
+    max-width: 370px;
+    align-items: center;
+    width: 100%;
+    height: 490px;
+    background: rgb(255, 255, 255);
+    border-radius: 30px;
+    -webkit-box-shadow: 0px 0px 35px 9px rgba(255, 255, 255, 0.7);
+    -moz-box-shadow: 0px 0px 35px 9px rgba(255, 255, 255, 0.7);
+    box-shadow: 0px 0px 35px 9px rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+}
+
+.company__box:hover {
+    transform: scale(1.1);
+    transition: all .3s;
+}
+
+.company__img {
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 30px 0 20px;
+}
+
+.text-box__title {
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+}
+
+.company__text-box {
+    padding: 0 40px;
+    text-align: center;
+}
+
+.text-box__list {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.text-box__item {
+    margin-bottom: 5px;
+}
+
+.dev {
+    background-image: url('/assets/images/dev.png');
+}
+
+.sup {
+    background-image: url('/assets/images/sup.png');
+}
+
+.seo {
+    background-image: url('/assets/images/seo.png');
+}
+
+.steps {
+    background-color: #03296E;
+}
+
+.steps__container {
+    padding-bottom: 76px;
+}
+
+.steps__item {
+    max-width: 90%;
+    width: 100%;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+    border-bottom: 3px solid white;
+    margin: 25px auto;
+}
+
+.steps__number {
+    font-size: 120px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.steps__text {
+    font-size: 48px;
+    color: white;
+    text-align: center;
+}
+
+.steps__list {
+    color: white;
+    margin-right: 50px;
+}
+
+.steps__list-item {
+    font-size: 24px;
+}
+
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #c4c6c8;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #03296E;
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.4);
+}
+
+::-webkit-scrollbar-thumb:vertical:hover,
+::-webkit-scrollbar-thumb:horizontal:hover {
+    background: #08A67C;
+}
+
+.stage__items {
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.stage__item-text {
+    margin-left: 110px;
+}
+
+.stage__item {
+    align-items: center;
+    max-width: 40%;
+    margin-bottom: 60px;
+}
+
+.stage__item-img {
+    width: 236px;
+    height: 156px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.stage__item-title {
+    color: #C11619;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.stage__item-list-item {
+    margin-bottom: 10px;
+}
+
+.stage1 {
+    background-image: url('/assets/images/stage1.png');
+}
+
+.stage2 {
+    background-image: url('/assets/images/stage2.png');
+}
+
+.stage3 {
+    background-image: url('/assets/images/stage3.png');
+}
+
+.stage4 {
+    background-image: url('/assets/images/stage4.png');
+}
+
+.stage5 {
+    background-image: url('/assets/images/stage5.png');
+}
