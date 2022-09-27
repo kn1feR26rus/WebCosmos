@@ -36,7 +36,7 @@ section {
     flex-direction: column;
 }
 
-.about__items, .company__items, .steps__box, .steps__item, .stage__item, .stage__items {
+.about__items, .company__items, .competit__items, .steps__box, .steps__item, .stage__item, .stage__items {
     display: flex;
     flex-direction: row;
 }
@@ -89,7 +89,7 @@ section {
     }
 }
 
-.about__container, .company__container, .stage__container, .steps__container {
+.about__container, .competit__container, .company__container, .stage__container, .steps__container {
     max-width: 90%;
     width: 100%;
     margin: 0 auto;
@@ -107,7 +107,7 @@ section {
     display: inline-block;
 }
 
-.about__items, .company__items, .steps__items, .stage__items {
+.about__items, .company__items, .competit__items, .steps__items, .stage__items {
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 50px 0 0;
@@ -153,7 +153,7 @@ section {
     justify-content: space-around;
 }
 
-.company__title, .steps__title {
+.company__title, .steps__title, .competit__title {
     color: white;
     border-bottom: 5px solid white;
     display: inline-block;
@@ -241,6 +241,7 @@ section {
     color: rgba(255, 255, 255, 0.5);
 }
 
+
 .steps__text {
     font-size: 48px;
     color: white;
@@ -326,4 +327,75 @@ section {
 
 .stage5 {
     background-image: url('/assets/images/stage5.png');
+}
+
+.competit {
+    background-image: url('/assets/images/competit.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 715px;
+    width: 100%;
+}
+
+.competit__items {
+    justify-content: flex-start;
+    margin-top: 70px;
+}
+
+.competit__item {
+    color: white;
+    font-size: 24px;
+    line-height: 35px;
+    font-family: 'Inter';
+    max-width: 25%;
+    width: 100%;
+    padding: 20px 60px;
+    margin-bottom: 52px;
+    position: relative;
+}
+
+.competit__item::before {
+    content: '';
+    position: absolute;
+    top: 33px;
+    left: -40px;
+    background-image: url('/assets/images/star.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 80px;
+}
+
+.competit__item1::before {
+    animation: star 3.5s ease-in infinite;
+}
+
+.competit__item2::before {
+    animation: star 1.5s ease-in infinite;
+}
+
+.competit__item3::before {
+    animation: star 2.5s ease-in infinite;
+}
+
+.competit__item4::before {
+    animation: star 3s ease-in infinite;
+}
+
+.competit__item5::before {
+    animation: star 4.5s ease-in infinite;
+}
+
+@keyframes star {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.2;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
