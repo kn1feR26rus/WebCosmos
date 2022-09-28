@@ -31,12 +31,12 @@ section {
     padding: 20px 0;
 }
 
-.about, .about__item, .company__box, .scheme__item, .stage__item-text, .scheme__box {
+.about, .about__item, .problems__item, .company__box, .scheme__item, .stage__item-text, .scheme__box {
     display: flex;
     flex-direction: column;
 }
 
-.about__items, .company__items, .competit__items, .steps__box, .steps__item, .stage__item, .stage__items {
+.about__items, .problems__items, .company__items, .competit__items, .steps__box, .steps__item, .stage__item, .stage__items {
     display: flex;
     flex-direction: row;
 }
@@ -89,7 +89,7 @@ section {
     }
 }
 
-.about__container, .scheme__container, .competit__container, .company__container, .stage__container, .steps__container {
+.about__container, .geo__container, .problems__container, .scheme__container, .competit__container, .company__container, .stage__container, .steps__container {
     max-width: 90%;
     width: 100%;
     margin: 0 auto;
@@ -101,7 +101,7 @@ section {
     font-family: 'Inter-medium';
 }
 
-.about__title, .stage__title, .scheme__title {
+.about__title, .stage__title, .scheme__title, .geo__title {
     color: #0459A0;
     border-bottom: 5px solid #0459A0;
     display: inline-block;
@@ -160,7 +160,7 @@ section {
 }
 
 .company__box {
-    max-width: 370px;
+    max-width: 420px;
     align-items: center;
     width: 100%;
     height: 490px;
@@ -192,7 +192,7 @@ section {
 }
 
 .company__text-box {
-    padding: 0 40px;
+    padding: 0 55px 0 60px;
     text-align: center;
 }
 
@@ -404,6 +404,7 @@ section {
     margin-top: 70px;
     position: relative;
 }
+
 .scheme__items::after {
     position: absolute;
     content: '';
@@ -488,6 +489,7 @@ section {
 .scheme__list-right {
     padding-right: 4%;
 }
+
 .scheme__fifth {
     justify-content: flex-start;
     align-items: flex-end;
@@ -513,21 +515,27 @@ section {
     text-align: center;
     z-index: 55;
 }
+
 .sheme_five {
     top: 1120px;
 }
+
 .sheme_four {
     top: 890px;
 }
+
 .sheme_three {
     top: 620px;
 }
+
 .sheme_two {
     top: 350px;
 }
+
 .sheme_one {
     top: 80px;
 }
+
 .scheme__fifth::before {
     content: '';
     position: absolute;
@@ -538,4 +546,60 @@ section {
     background-size: contain;
     width: 125px;
     height: 125px;
+}
+.problems__items {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 62px;
+}
+
+.problems__title {
+    width: 100%;
+    text-align: center;
+    font-size: 48px;
+    line-height: 58px;
+    color: #0459A0;
+    padding-top: 103px;
+    font-family: 'Inter';
+}
+.problems__item {
+    max-width: 22%;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 76px;
+}
+.problems__img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 52px;
+}
+.problems__text {
+    width: 240px;
+    color: #000000;
+    font-size: 24px;
+line-height: 29px;
+}
+.geo__container {
+    display: flex;
+    flex-direction: column;
+}
+.geo__title {
+    width: 655px;
+    margin-bottom: 40px;
+}
+.geo__subtitle {
+    font-size: 24px;
+    line-height: 29px;
+    max-width: 755px;
+    width: 100%;
+}
+.geo__items {
+    background-image: url('/assets/images/geo.png');
+    width: 100%;
+    height: 805px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-top: 30px;
 }
